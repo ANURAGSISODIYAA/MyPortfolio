@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+
+    <!-- For Desktop -->
+    <nav id="desktop-nav">
+        <div class="logo">Anurag Sisodiya</div>
+        <div>
+            <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+     <!-- for Mobile three Line(hamburger-nav)  -->
+    <nav id="hamburger-nav">
+        <div class="logo">Anurag Sisodiya</div>
+
+        <div class="hamburger-menu">
+
+             <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu-links">
+               <li><a href="#about" onclick="toggleMenu()">About</a></li>
+               <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+               <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+               <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- profile section -->
+    <section id="profile">
+
+        <div class="pic-section">
+            <img src="assets\animated.gif" 
+            alt="Anurag Sisodiya Profle picture"/>
+        </div>
+
+        <div class="text-section">
+            <p class="p1-text-section">Hello, I am</p>
+            <h1 class="title">Anurag Sisodiya</h1>
+            <p class="p2-text-section">Full Stack Developer</p>
+        
+         
+        <div id="btn-container">
+            <button class="resume-btn" 
+            onclick="window.open('assets\Anurag Sisodiya Resume.pdf.pdf')">Resume</button>
+            <button class="contact-btn" 
+            onclick="location.href='./#contact'">Contact</button>
+        </div>
+        
+        <div id="social-container">
+            <img src="assets\linkedin.png" class="icon" alt="linkdin profile" 
+            onclick="location.href='https://www.linkedin.com/in/anurag-sisodiya-64a202252/'" />
+            <img src="assets\github.png" class="icon" alt="github- profile" 
+            onclick="location.href='https://github.com/ANURAGSISODIYAA?tab=overview&from=2024-02-01&to=2024-02-21'" />
+            <!-- <img src="assets\x-icon.png" class="icon" alt="twitter- profile" 
+            onclick="location.href='https://github.com/ANURAGSISODIYAA?tab=overview&from=2024-02-01&to=2024-02-21'" />
+            <img src="assets\LeetCode.png" class="icon" alt="leetcode- profile" 
+            onclick="location.href='https://leetcode.com/AnuragSisodiya/'" />
+            <img src="assets\codechef.png" class="icon" alt="codechef- profile" 
+            onclick="location.href='https://github.com/ANURAGSISODIYAA?tab=overview&from=2024-02-01&to=2024-02-21'" /> -->
+        </div>
+        
+    </div>
+    </section>
+   <script src="script.js"></script> 
+</body>
+</html>
